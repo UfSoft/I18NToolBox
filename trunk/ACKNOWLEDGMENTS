@@ -1,0 +1,25 @@
+Some thanking should be done.
+
+Thank You coderanger(from #trac on irc.freenode.net) for helping me write
+that pretty huge regex to grab gettext calls on genshi templates, which
+fortunately is not being used.
+
+Thank You matt_good(from #trac and #python-genshi on irc.freenode.net) for
+making it so easy to find gettext calls on genshi templates using python's
+opcode module.
+
+Thank You TurboGears(http://turbogears.org/) for providing some great ideas
+on how to build this package, namely parts of your admi18n toolbox, and your
+commands architecture.
+
+Thank You pjenvey, benbangert and some others that I forgot the names/nicks
+(from #pylons on irc.freenode.net) for introducing and explaining some of
+the gettext goodness to me.
+
+Thank You Pylons(http://pylonshq.com/) for being such a wonderful framework
+that does not force me to use an SQL backend just to run it(sorry TurboGears
+:) that was the reason why I didn't invest in you)
+
+And finally, Thank's to All those that I forgot.
+
+Pedro Algarvio, aka, s0undt3ch.

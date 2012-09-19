@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+# vim: sw=4 ts=4 fenc=utf-8
+# =============================================================================
+# $Id: web_ui.py 75 2007-02-05 23:03:20Z s0undt3ch $
+# =============================================================================
+#             $URL: http://i18ntoolbox.ufsoft.org/svn/sandbox/nosebitten/nosebitten/trac_ext/web_ui.py $
+# $LastChangedDate: 2007-02-05 23:03:20 +0000 (Mon, 05 Feb 2007) $
+#             $Rev: 75 $
+#   $LastChangedBy: s0undt3ch $
+# =============================================================================
+# Copyright (C) 2006 Ufsoft.org - Pedro Algarvio <ufs@ufsoft.org>
+#
+# Please view LICENSE for additional licensing information.
+# =============================================================================
+
+import pkg_resources
+from bitten.trac_ext.web_ui import BittenChrome
+#from trac.web.chrome import ITemplateProvider
+
+class NoseBittenChrome(BittenChrome):
+
+    def get_htdocs_dirs(self):
+        return [('nosebitten', pkg_resources.resource_filename(__name__, 'htdocs'))]
+        #return []
+
+    def get_templates_dirs(self):
+        return [pkg_resources.resource_filename(__name__, 'templates')]
+
+    def get_active_navigation_item(self, req):
+        add_script(req, '/'.join(['nosebitten', 'jquery-latest.js']))
+        add_script(req, '/'.join(['nosebitten', 'jquery.tablesorter.js']))
+        add_script(req, '/'.join(['nosebitten', 'nosebitten.js']))
+        add_stylesheet(req, 'nosebitten/nosebitten.css')
+        return BittenChrome.get_active_navigation_item(self, req)

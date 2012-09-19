@@ -1,0 +1,7 @@
+<coverage-results><coverage executed="0" name="i18ntoolbox" lines="5" file="/home/vampas/projects/i18ntoolbox/branches/fresh-start/i18ntoolbox/__init__.py" percentage="0" miss="16-20"/>
+<coverage executed="212" name="i18ntoolbox.commands" lines="234" file="/home/vampas/projects/i18ntoolbox/branches/fresh-start/i18ntoolbox/commands/__init__.py" percentage="90" miss="50 240 373-380 385 400-402 409-411 441 443 447 464-465"/>
+<coverage executed="134" name="i18ntoolbox.commands.extract" lines="137" file="/home/vampas/projects/i18ntoolbox/branches/fresh-start/i18ntoolbox/commands/extract.py" percentage="97" miss="202 257 358"/>
+<coverage executed="6" name="i18ntoolbox.templating" lines="9" file="/home/vampas/projects/i18ntoolbox/branches/fresh-start/i18ntoolbox/templating/__init__.py" percentage="66" miss="36 42 55"/>
+<coverage executed="24" name="i18ntoolbox.templating.genshigte" lines="108" file="/home/vampas/projects/i18ntoolbox/branches/fresh-start/i18ntoolbox/templating/genshigte.py" percentage="22" miss="41 47-57 61 67-79 84-101 106 113-158 162-172"/>
+<coverage executed="85" name="i18ntoolbox.utils" lines="90" file="/home/vampas/projects/i18ntoolbox/branches/fresh-start/i18ntoolbox/utils.py" percentage="94" miss="169 220-221 224-225"/>
+</coverage-results>

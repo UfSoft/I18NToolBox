@@ -1,0 +1,1052 @@
+<unittest-results><test><status>success</status>
+<name>doctest</name>
+<fixture>Doctest: i18ntoolbox.utils.AttrsDict</fixture>
+<file>i18ntoolbox/utils.py</file>
+<description>Doctest: i18ntoolbox.utils.AttrsDict</description>
+</test>
+<test><status>success</status>
+<name>doctest</name>
+<fixture>Doctest: i18ntoolbox.utils.check_python_format</fixture>
+<file>i18ntoolbox/utils.py</file>
+<description>Doctest: i18ntoolbox.utils.check_python_format</description>
+</test>
+<test><status>success</status>
+<name>doctest</name>
+<fixture>Doctest: i18ntoolbox.utils.escape_unicode</fixture>
+<file>i18ntoolbox/utils.py</file>
+<description>Doctest: i18ntoolbox.utils.escape_unicode</description>
+</test>
+<test><status>success</status>
+<name>doctest</name>
+<fixture>Doctest: i18ntoolbox.utils.normalize</fixture>
+<file>i18ntoolbox/utils.py</file>
+<description>Doctest: i18ntoolbox.utils.normalize</description>
+</test>
+<test><status>success</status>
+<name>test_AddCommentsOptionType</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: The '--add-comments' option value is a string</description>
+</test>
+<test><status>success</status>
+<name>test_CopyrightHolderOptionType</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: The '--copyright-holder' option value is a string</description>
+</test>
+<test><status>success</status>
+<name>test_DebugOptionType</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: The '--debug' option value is a bolean</description>
+</test>
+<test><status>success</status>
+<name>test_DefaultDomainType</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: The '--default-domain' option value is a string</description>
+</test>
+<test><status>success</status>
+<name>test_ExcludeFileOptionType</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: The '--exclude-file' option value is a string</description>
+</test>
+<test><status>success</status>
+<name>test_ForeignUserOptionType</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: The '--foreign-user' option value is a bool</description>
+</test>
+<test><status>success</status>
+<name>test_HasAddCommentsOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Has '--add-comments' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasCopyrightHolderOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Has '--copyright-holder' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasDebugOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Has '--debug' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasDefaultDomainOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Has '--default-domain' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasExcludeFileOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Has '--exclude-file' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasForeignUserOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Has '--foreign-user' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasJoinExistingOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Has '--join-existing' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasKeywordOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Has '--keyword' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasMsgidBugsAddressOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Has '--msgid-bugs-address' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasMsgstrPrefixOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Has '--msgstr-prefix' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasMsgstrSuffixOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Has '--msgstr-suffix' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasOutputDirOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Has '--output-dir' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasOutputFileOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Has '--output-file' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasTemplatesDirNameOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Has '--templates-dir-name' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasTemplatesExtensionOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Has '--templates-extension' option</description>
+</test>
+<test><status>success</status>
+<name>test_JoinExistingType</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: The '--join-existing' option value is a bolean</description>
+</test>
+<test><status>success</status>
+<name>test_KeywordOptionType</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: The '--keyword' option value is a list</description>
+</test>
+<test><status>success</status>
+<name>test_MsgidBugsAddressOptionType</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: The '--msgid-bugs-address' option value is a string</description>
+</test>
+<test><status>success</status>
+<name>test_MsgstrPrefixOptionType</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: The '--msgstr-prefix' option value is a string</description>
+</test>
+<test><status>success</status>
+<name>test_MsgstrSuffixOptionType</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: The '--msgstr-suffix' option value is a string</description>
+</test>
+<test><status>success</status>
+<name>test_OutputDirOptionType</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: The '--output-dir' option value is a string</description>
+</test>
+<test><status>success</status>
+<name>test_OutputFileOptionType</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: The '--output-file' option is a string</description>
+</test>
+<test><status>success</status>
+<name>test_ScanSourceFilesAndHtmlTemplates</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<output>Python File Path: /home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/file1.py
+Python File Path: /home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/file2.py
+Template File Path: /home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/html_templates/layout.html
+Template File Path: /home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/html_templates/index.html
+</output>
+<description>ExtractionTool: test scan_files() and '.html' templates</description>
+</test>
+<test><status>success</status>
+<name>test_ScanSourceFilesAndXhtmlTemplates</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<output>Python File Path: /home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/file1.py
+Python File Path: /home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/file2.py
+Template File Path: /home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/xhtml_templates/layout.xhtml
+Template File Path: /home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/xhtml_templates/index.xhtml
+</output>
+<description>ExtractionTool: test scan_files() and '.xhtml' templates</description>
+</test>
+<test><status>success</status>
+<name>test_SetAddComments</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--add-comments' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetAddCommentsUpdatesGettextOpts</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--add-comments' option updates the gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetCopyrightHolderOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--copyright-holder' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetCopyrightHolderUpdatesGettextOpts</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--copyright-holder' option updates the gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetDebugOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--debug' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetDebugUpdatesGettextOpts</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<output>Backup '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n/testproject.pot' if present.
+</output>
+<description>ExtractionTool: Set '--debug' option updates the gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetDefaultDomain</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--default-domain' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetDefaultDomainUpdatesGettextOpts</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--default-domain' option updates the gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetExcludeFile</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--exclude-file' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetExcludeFileUpdatesGettextOpts</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--exclude-file' option updates the gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetForeignUserOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--foreign-user' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetForeignUserUpdatesGettextOpts</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--foreign-user' option updates the gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetJoinExisting</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--join-existing' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetJoinExistingUpdatesGettextOpts</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--join-existing' option updates the gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetKeyword</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set extra '--keyword' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetKeywordUpdatesGettextOpts</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--keyword' option updates the gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetMsgidBugsAddressOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--msgid-bugs-address' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetMsgidBugsAddressUpdatesGettextOpts</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--msgid-bugs-address' option updates the gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetMsgstrPrefixOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--msgstr-prefix' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetMsgstrPrefixUpdatesGettextOpts</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--msgstr-prefix' option updates the gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetMsgstrSuffixOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--msgstr-suffix' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetMsgstrSuffixUpdatesGettextOpts</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--msgstr-suffix' option updates the gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetOutputDirOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--output-dir' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetOutputDirUpdatesGettextOpts</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--output-dir' option updates the gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetOutputFileOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--output-file' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetOutputFileOptionUpdatesGettextOpts</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--output-file' option updates the gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetTemplatesDirNameOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--templates-dir-name' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetTemplatesDirNameUpdatesGettextOpts</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: The '--templates-dir-name' option updates the parsed_opts dict</description>
+</test>
+<test><status>success</status>
+<name>test_SetTemplatesExtensionOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<output>['.ghtml']
+</output>
+<description>ExtractionTool: Set '--templates-extension' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetTemplatingEnginesEnableOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Set '--&lt;engine&gt;-support' for each templating engine</description>
+</test>
+<test><status>success</status>
+<name>test_TemplatesDirNameOptionType</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: The '--templates-dir-name' option value is a string</description>
+</test>
+<test><status>success</status>
+<name>test_TemplatesExtensionOptionDefaultValues</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Defaults values for '--templates-extension' option are correct</description>
+</test>
+<test><status>success</status>
+<name>test_TemplatesExtensionOptionType</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<output>{'join_existing': False, 'msgstr_prefix': None, 'output_file': 'testproject.pot', 'no_location': False, 'no_escape': True, 'foreign_user': False, 'copyright_holder': None, 'escape': False, 'keywords': ['gettext', 'gettext:1,2', 'ungettext:1,2', 'ugettext', 'dgettext:2', 'dngettext:2,3', '_', 'N_', 'ngettext_noop'], 'exclude_file': None, 'no_wrap': False, 'width': None, 'output_dir': '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n', 'templates_extensions': ['.html'], 'templates_dir_name': 'templates', 'msgid_bugs_address': None, 'strict': False, 'add_comments': None, 'sort_output': False, 'add_location': True, 'genshi_support': False, 'default_domain': 'testproject', 'destructive': False, 'indent': False, 'msgstr_suffix': None, 'debug': False, 'sort_by_file': False}
+</output>
+<description>ExtractionTool: The '--templates-extension' option value is a list</description>
+</test>
+<test><status>success</status>
+<name>test_TemplatingEnginesEnableOption</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<output>{'Genshi': &lt;i18ntoolbox.templating.genshigte.GenshiGettextExtract object at 0xb72f77ec&gt;}
+</output>
+<description>ExtractionTool: Templating Engines have '--&lt;engine&gt;-support' option</description>
+</test>
+<test><status>success</status>
+<name>test_TemplatingEnginesEnableOptionType</name>
+<fixture>test_extract.TestExtractionTool</fixture>
+<file>tests/test_extract.py</file>
+<description>ExtractionTool: Each of the '--&lt;engine&gt;-support' option value is a boolean</description>
+</test>
+<test><status>success</status>
+<name>test_NeededVars</name>
+<fixture>test_i18ntoolbox.TestI18NToolBox__INIT__</fixture>
+<file>tests/test_i18ntoolbox.py</file>
+<description>i18ntoolbox.__init__: Make sure the needed variables are set</description>
+</test>
+<test><status>success</status>
+<name>test_NeededVarsType</name>
+<fixture>test_i18ntoolbox.TestI18NToolBox__INIT__</fixture>
+<file>tests/test_i18ntoolbox.py</file>
+<description>i18ntoolbox.__init__: Make sure the needed variables are strings</description>
+</test>
+<test><status>success</status>
+<name>test_DestructiveOptionType</name>
+<fixture>test_optparsers.TestBaseGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>BaseGettextTool: The '--destructive' option value is a bolean</description>
+</test>
+<test><status>success</status>
+<name>test_HasDestructiveOption</name>
+<fixture>test_optparsers.TestBaseGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>BaseGettextTool: Has '--destructive' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasOutputFileOption</name>
+<fixture>test_optparsers.TestBaseGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>BaseGettextTool: Has '--output-file' option</description>
+</test>
+<test><status>success</status>
+<name>test_OutputFileLocationGroup</name>
+<fixture>test_optparsers.TestBaseGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>BaseGettextTool: Make sure the 'Output File Location' group exists</description>
+</test>
+<test><status>success</status>
+<name>test_OutputFileType</name>
+<fixture>test_optparsers.TestBaseGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>BaseGettextTool: The '--output-file' option value is a basestring instance</description>
+</test>
+<test><status>success</status>
+<name>test_OutputFileUpdatesGettextDefaultsDict</name>
+<fixture>test_optparsers.TestBaseGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>BaseGettextTool: The '--output-file' option updates the defaults gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetDestructiveOption</name>
+<fixture>test_optparsers.TestBaseGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>BaseGettextTool: Set '--destructive' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetOutputFileOption</name>
+<fixture>test_optparsers.TestBaseGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>BaseGettextTool: Set '--output-file' option</description>
+</test>
+<test><status>success</status>
+<name>test_EmptyCmdLine</name>
+<fixture>test_optparsers.TestCmdLineInterface</fixture>
+<file>tests/test_optparsers.py</file>
+<output>usage: setup.py [options] &lt;command&gt; [command options]
+
+I18NToolBox is intented to provide some centralized helper function for
+gettext translatable strings extraction and compilation.
+
+options:
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  -b BASEDIR, --base=BASEDIR
+                        Project Base Directory. Defaults to current directory.
+  -p PACKAGE_DIR, --package-dir=PACKAGE_DIR
+                        Package's path.
+  -i I18N_PATH, --i18n-path=I18N_PATH
+                        Path to package's i18n dir.
+
+commands:
+    extract  Scan source files to gather translatable strings in a .pot file
+</output>
+<description>CmdLineInterface: no args passed raises SystemExit</description>
+</test>
+<test><status>success</status>
+<name>test_ExtractCommand</name>
+<fixture>test_optparsers.TestCmdLineInterface</fixture>
+<file>tests/test_optparsers.py</file>
+<output>Backup '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n/testproject.pot' if present.
+</output>
+<description>CmdLineInterface: run extract command(with args from setup.cfg)</description>
+</test>
+<test><status>success</status>
+<name>test_FromSetupConfigCopyrightHolder</name>
+<fixture>test_optparsers.TestCmdLineInterface</fixture>
+<file>tests/test_optparsers.py</file>
+<output>Backup '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n/testproject.pot' if present.
+</output>
+<description>CmdLineInterface: is '--copyright-holder' set from projects setup.cfg</description>
+</test>
+<test><status>success</status>
+<name>test_FromSetupConfigDebug</name>
+<fixture>test_optparsers.TestCmdLineInterface</fixture>
+<file>tests/test_optparsers.py</file>
+<output>Backup '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n/testproject.pot' if present.
+</output>
+<description>CmdLineInterface: is '--debug' set from projects setup.cfg</description>
+</test>
+<test><status>success</status>
+<name>test_FromSetupConfigEscape</name>
+<fixture>test_optparsers.TestCmdLineInterface</fixture>
+<file>tests/test_optparsers.py</file>
+<output>Backup '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n/testproject.pot' if present.
+</output>
+<description>CmdLineInterface: is '--escape' set from projects setup.cfg</description>
+</test>
+<test><status>success</status>
+<name>test_FromSetupConfigForeignUser</name>
+<fixture>test_optparsers.TestCmdLineInterface</fixture>
+<file>tests/test_optparsers.py</file>
+<output>Backup '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n/testproject.pot' if present.
+</output>
+<description>CmdLineInterface: is '--foreign-user' set from projects setup.cfg</description>
+</test>
+<test><status>success</status>
+<name>test_FromSetupConfigGenshiSupport</name>
+<fixture>test_optparsers.TestCmdLineInterface</fixture>
+<file>tests/test_optparsers.py</file>
+<output>Backup '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n/testproject.pot' if present.
+</output>
+<description>CmdLineInterface: is '--genshi-support' set from projects setup.cfg</description>
+</test>
+<test><status>success</status>
+<name>test_FromSetupConfigJoinExiting</name>
+<fixture>test_optparsers.TestCmdLineInterface</fixture>
+<file>tests/test_optparsers.py</file>
+<output>Backup '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n/testproject.pot' if present.
+{'project': {'potfile': 'testproject.pot', 'name': 'TestProject', 'i18n_path': '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n', 'basedir': '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data', 'version': '0.1', 'path': '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project', 'potfile_path': '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n/testproject.pot'}, 'gettext_opts': ['--no-escape', '--add-location', '--width=76', '--output=testproject.pot', '--default-domain=testproject', '--output-dir=/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n', '--copyright-holder=Pedro Algarvio', '--msgid-bugs-address=foo@bar.tld', '--join-existing', '--keyword=gettext', '--keyword=gettext:1,2', '--keyword=ungettext:1,2', '--keyword=ugettext', '--keyword=dgettext:2', '--keyword=dngettext:2,3', '--keyword=_', '--keyword=N_', '--keyword=ngettext_noop', '--keyword=__', '--keyword=N__', '--debug'], 'parsed_opts': {'join_existing': True, 'msgstr_prefix': None, 'output_file': 'testproject.pot', 'no_location': False, 'no_escape': True, 'foreign_user': False, 'copyright_holder': 'Pedro Algarvio', 'escape': False, 'keywords': ['gettext', 'gettext:1,2', 'ungettext:1,2', 'ugettext', 'dgettext:2', 'dngettext:2,3', '_', 'N_', 'ngettext_noop', '__', 'N__'], 'exclude_file': None, 'no_wrap': False, 'width': 76, 'output_dir': '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n', 'templates_extensions': ['.html'], 'templates_dir_name': 'templates', 'msgid_bugs_address': 'foo@bar.tld', 'strict': False, 'add_comments': None, 'sort_output': False, 'add_location': True, 'genshi_support': True, 'default_domain': 'testproject', 'destructive': False, 'indent': False, 'msgstr_suffix': None, 'debug': True, 'sort_by_file': False}, 'engines': {'Genshi': {'extensions': ('.html',)}}, 'cfgfile': {'foreign-user': False, 'sort-output': False, 'msgid-bugs-address': 'foo@bar.tld', 'copyright-holder': 'Pedro Algarvio', 'join-existing': True, 'strict': False, 'keywords': ['__', 'N__'], 'escape': False, 'debug': True, 'genshi-support': True, 'width': 76}}
+</output>
+<description>CmdLineInterface: is '--join-existing' set from projects setup.cfg</description>
+</test>
+<test><status>error</status>
+<name>test_FromSetupConfigKeywords</name>
+<traceback>I failed because I wanted to<![CDATA[<traceback object at 0xb7308edc>]]></traceback>
+<fixture>test_optparsers.TestCmdLineInterface</fixture>
+<file>tests/test_optparsers.py</file>
+<output>DEFAULT_KEYWORDS: ('gettext', 'gettext:1,2', 'ungettext:1,2', 'ugettext', 'dgettext:2', 'dngettext:2,3', '_', 'N_', 'ngettext_noop')
+Backup '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n/testproject.pot' if present.
+Parsed Keywords: ['gettext', 'gettext:1,2', 'ungettext:1,2', 'ugettext', 'dgettext:2', 'dngettext:2,3', '_', 'N_', 'ngettext_noop', '__', 'N__']
+Config File Options: {'foreign-user': False, 'sort-output': False, 'msgid-bugs-address': 'foo@bar.tld', 'copyright-holder': 'Pedro Algarvio', 'join-existing': True, 'strict': False, 'keywords': ['__', 'N__'], 'escape': False, 'debug': True, 'genshi-support': True, 'width': 76}
+</output>
+<description>CmdLineInterface: is '--keywords' set from projects setup.cfg</description>
+</test>
+<test><status>success</status>
+<name>test_FromSetupConfigMsgidBugsAddress</name>
+<fixture>test_optparsers.TestCmdLineInterface</fixture>
+<file>tests/test_optparsers.py</file>
+<output>Backup '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n/testproject.pot' if present.
+</output>
+<description>CmdLineInterface: is '--msgid-bugs-address' set from projects setup.cfg</description>
+</test>
+<test><status>success</status>
+<name>test_FromSetupConfigSortOutput</name>
+<fixture>test_optparsers.TestCmdLineInterface</fixture>
+<file>tests/test_optparsers.py</file>
+<output>Backup '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n/testproject.pot' if present.
+</output>
+<description>CmdLineInterface: is '--sort-output' set from projects setup.cfg</description>
+</test>
+<test><status>success</status>
+<name>test_FromSetupConfigStrict</name>
+<fixture>test_optparsers.TestCmdLineInterface</fixture>
+<file>tests/test_optparsers.py</file>
+<output>Backup '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n/testproject.pot' if present.
+</output>
+<description>CmdLineInterface: is '--strict' set from projects setup.cfg</description>
+</test>
+<test><status>success</status>
+<name>test_FromSetupConfigWidth</name>
+<fixture>test_optparsers.TestCmdLineInterface</fixture>
+<file>tests/test_optparsers.py</file>
+<output>Backup '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n/testproject.pot' if present.
+</output>
+<description>CmdLineInterface: is '--width' set from projects setup.cfg</description>
+</test>
+<test><status>success</status>
+<name>test_ProjectBasedirFromDefaults</name>
+<fixture>test_optparsers.TestCmdLineInterface</fixture>
+<file>tests/test_optparsers.py</file>
+<output>Backup '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n/testproject.pot' if present.
+</output>
+<description>CmdLineInterface: correct project basedir from defaults</description>
+</test>
+<test><status>success</status>
+<name>test_ProjectI18NPathFromDefaults</name>
+<fixture>test_optparsers.TestCmdLineInterface</fixture>
+<file>tests/test_optparsers.py</file>
+<output>Backup '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n/testproject.pot' if present.
+</output>
+<description>CmdLineInterface: correct project i18n path from defaults</description>
+</test>
+<test><status>success</status>
+<name>test_ProjectNameDefault</name>
+<fixture>test_optparsers.TestCmdLineInterface</fixture>
+<file>tests/test_optparsers.py</file>
+<output>Backup '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n/testproject.pot' if present.
+</output>
+<description>CmdLineInterface: correct project name from defaults</description>
+</test>
+<test><status>success</status>
+<name>test_ProjectPathFromDefaults</name>
+<fixture>test_optparsers.TestCmdLineInterface</fixture>
+<file>tests/test_optparsers.py</file>
+<output>Backup '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n/testproject.pot' if present.
+</output>
+<description>CmdLineInterface: correct project path from defaults</description>
+</test>
+<test><status>success</status>
+<name>test_ProjectVersionFromDefaults</name>
+<fixture>test_optparsers.TestCmdLineInterface</fixture>
+<file>tests/test_optparsers.py</file>
+<output>Backup '/home/vampas/projects/i18ntoolbox/branches/fresh-start/tests/data/project/i18n/testproject.pot' if present.
+</output>
+<description>CmdLineInterface: correct project version from defaults</description>
+</test>
+<test><status>success</status>
+<name>test_AddLocationOptionType</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: The '--add-location' option value is a boolean</description>
+</test>
+<test><status>success</status>
+<name>test_EscapeOptionType</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: The '--escape' option value is a boolean</description>
+</test>
+<test><status>success</status>
+<name>test_HasAddLocationOption</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Has '--add-location' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasEscapeOption</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Has '--escape' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasIndentOption</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Has '--indent' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasNoEscapeOption</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Has '--no-escape' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasNoLocationOption</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Has '--no-location' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasNoWrapOption</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Has '--no-wrap' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasSortByFileOption</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Has '---sort-by-file' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasSortOutputOption</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Has '---sort-output' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasStrictOption</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Has '--strict' option</description>
+</test>
+<test><status>success</status>
+<name>test_HasWidthOption</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Has '--width' option</description>
+</test>
+<test><status>success</status>
+<name>test_IndentOptionType</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: The '--indent' option value is a boolean</description>
+</test>
+<test><status>success</status>
+<name>test_NoEscapeOptionType</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: The '--no-escape' option value is a boolean</description>
+</test>
+<test><status>success</status>
+<name>test_NoLocationOptionType</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: The '--no-location' option value is a boolean</description>
+</test>
+<test><status>success</status>
+<name>test_NoLocationUpdatesGettextOpts</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Set '--no-location' option updates the defaults gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_NoWrapOptionType</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: The '--no-wrap' option value is a boolean</description>
+</test>
+<test><status>success</status>
+<name>test_SetAddLocationOption</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Set '--add-location' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetAddLocationUpdatesGettextOpts</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Set '--add-location' option updates the defaults gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetEscapeAndNoEscapeOptions</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<output>usage: setup.py If you're reading this, it means the command did not override all the necessary stuff [options]
+
+setup.py: error: '--escape' and '--no-escape' are mutually exclusive.
+</output>
+<description>CommonOptsGettextTool: Set Both '--escape' and '--no-escape' raises SystemExit</description>
+</test>
+<test><status>success</status>
+<name>test_SetEscapeOption</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Set '--escape' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetEscapeUpdatesGetextOpts</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Set '--escape' option updates the defaults gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetIndentOption</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Set '--indent' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetIndentUpdatesGettextOpts</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Set '--indent' option updates the defaults gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetLocationAndNoLocationOptions</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<output>usage: setup.py If you're reading this, it means the command did not override all the necessary stuff [options]
+
+setup.py: error: '--add-location' and '--no-location' are mutually exclusive.
+</output>
+<description>CommonOptsGettextTool: Set Both '--no-location' and '--add-location' raises SystemExit</description>
+</test>
+<test><status>success</status>
+<name>test_SetNoEscapeOption</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Set '--no-escape' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetNoEscapeUpdatesGetextOpts</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Set '--no-escape' option updates the defaults gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetNoLocationOption</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Set '--no-location' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetNoWrapOption</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Set '--no-wrap' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetNoWrapUpdatesGettextOpts</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Set '--no-wrap' option updates the defaults gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetSortByFileOption</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Set '--sort-by-file' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetSortByFileUpdatesGettextOpts</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Set '--sort-by-file' option updates the defaults gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetSortOutputAndSortByFileOptions</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<output>usage: setup.py If you're reading this, it means the command did not override all the necessary stuff [options]
+
+setup.py: error: '--sort-output' and '--sort-by-file' are mutually exclusive.
+</output>
+<description>CommonOptsGettextTool: Set Both '--sort-output' and '--sort-by-file' raises SystemExit</description>
+</test>
+<test><status>success</status>
+<name>test_SetSortOutputOption</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Set '--sort-output' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetSortOutputUpdatesGettextOpts</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Set '--sort-output' option updates the defaults gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetStrictOption</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Set '--strict' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetStrictUpdatesGettextOpts</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Set '--strict' option updates the defaults gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SetWidthAndNoWrap</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<output>usage: setup.py If you're reading this, it means the command did not override all the necessary stuff [options]
+
+setup.py: error: '--no-wrap' and '--width' are mutually exclusive.
+</output>
+<description>CommonOptsGettextTool: Set Both '--width' and '--no-wrap' raises SystemExit</description>
+</test>
+<test><status>success</status>
+<name>test_SetWidthOption</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Set '--width' option</description>
+</test>
+<test><status>success</status>
+<name>test_SetWidthUpdatesGettextOpts</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: Set '--width' option updates the defaults gettext opt list</description>
+</test>
+<test><status>success</status>
+<name>test_SortByFileOptionType</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: The '--sort-by-file' option value is a boolean</description>
+</test>
+<test><status>success</status>
+<name>test_SortOutputOptionType</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: The '--sort-output' option value is a boolean</description>
+</test>
+<test><status>success</status>
+<name>test_StrictOptionType</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: The '--strict' option value is a boolean</description>
+</test>
+<test><status>success</status>
+<name>test_WidthOptionType</name>
+<fixture>test_optparsers.TestCommonOptsGettextTool</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CommonOptsGettextTool: The '--width' option value is an integer</description>
+</test>
+<test><status>success</status>
+<name>test_AddOptionToOptionGroup</name>
+<fixture>test_optparsers.TestCustomOptionParser</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CustomOptionParser: Add an option to an option group</description>
+</test>
+<test><status>success</status>
+<name>test_GetOptionGroup</name>
+<fixture>test_optparsers.TestCustomOptionParser</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CustomOptionParser: Test overriden get_option_group()</description>
+</test>
+<test><status>success</status>
+<name>test_GetOptionGroupByAttribute</name>
+<fixture>test_optparsers.TestCustomOptionParser</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CustomOptionParser: Get option group by attribute</description>
+</test>
+<test><status>success</status>
+<name>test_SetUpOptionGroup</name>
+<fixture>test_optparsers.TestCustomOptionParser</fixture>
+<file>tests/test_optparsers.py</file>
+<description>CustomOptionParser: Create option group</description>
+</test>
+<test><status>success</status>
+<name>test_AddValueByAttribute</name>
+<fixture>test_utils.TestAttrsDict</fixture>
+<file>tests/test_utils.py</file>
+<description>utils.AttrsDict: Add a value to dict by attribute</description>
+</test>
+<test><status>success</status>
+<name>test_AddValueByKey</name>
+<fixture>test_utils.TestAttrsDict</fixture>
+<file>tests/test_utils.py</file>
+<description>utils.AttrsDict: Add a value to dict by key</description>
+</test>
+<test><status>success</status>
+<name>test_AttrsDictKeys</name>
+<fixture>test_utils.TestAttrsDict</fixture>
+<file>tests/test_utils.py</file>
+<description>utils.AttrsDict: Assure we have the 2 keys we've set</description>
+</test>
+<test><status>success</status>
+<name>test_AttrsDictRaiseAttributeError</name>
+<fixture>test_utils.TestAttrsDict</fixture>
+<file>tests/test_utils.py</file>
+<description>utils.AttrsDict: make sure that on KeyError we raise an AttributeError</description>
+</test>
+<test><status>success</status>
+<name>test_AttrsDictValues</name>
+<fixture>test_utils.TestAttrsDict</fixture>
+<file>tests/test_utils.py</file>
+<description>utils.AttrsDict: Assure we have the 2 values we've set</description>
+</test>
+<test><status>success</status>
+<name>test_GetValueByAttribute</name>
+<fixture>test_utils.TestAttrsDict</fixture>
+<file>tests/test_utils.py</file>
+<description>utils.AttrsDict: Get a value from dict by attribute</description>
+</test>
+<test><status>success</status>
+<name>test_GetValueByKey</name>
+<fixture>test_utils.TestAttrsDict</fixture>
+<file>tests/test_utils.py</file>
+<description>utils.AttrsDict: Get a value from dict by key</description>
+</test>
+<test><status>success</status>
+<name>test_GetBoolOpt</name>
+<fixture>test_utils.TestGetOptsHelpers</fixture>
+<file>tests/test_utils.py</file>
+<description>utils.get_bool_opt: make sure we get a bool value</description>
+</test>
+<test><status>success</status>
+<name>test_GetBoolOptRaisesOptionErrorOnIntsBiggerThanOne</name>
+<fixture>test_utils.TestGetOptsHelpers</fixture>
+<file>tests/test_utils.py</file>
+<description>utils.get_bool_opt: raises OptionError when trying to cast an int &gt;1 to boolean</description>
+</test>
+<test><status>success</status>
+<name>test_GetBoolOptRaisesOptionErrorOnLists</name>
+<fixture>test_utils.TestGetOptsHelpers</fixture>
+<file>tests/test_utils.py</file>
+<description>utils.get_bool_opt: raises AttributeError when trying to cast a list to boolean</description>
+</test>
+<test><status>success</status>
+<name>test_GetBoolOptRaisesOptionErrorOnRandomString</name>
+<fixture>test_utils.TestGetOptsHelpers</fixture>
+<file>tests/test_utils.py</file>
+<description>utils.get_bool_opt: raises OptionError when trying to cast a random string to boolean</description>
+</test>
+<test><status>success</status>
+<name>test_GetIntOpt</name>
+<fixture>test_utils.TestGetOptsHelpers</fixture>
+<file>tests/test_utils.py</file>
+<description>utils.get_int_opt: make sure we get an int value</description>
+</test>
+<test><status>success</status>
+<name>test_GetIntOptRaisesOptionErrorOnValuesOtherThanInts</name>
+<fixture>test_utils.TestGetOptsHelpers</fixture>
+<file>tests/test_utils.py</file>
+<description>utils.get_int_opt: raises OptionError when trying to cast to int anything besides ints</description>
+</test>
+<test><status>success</status>
+<name>test_GetListOpt</name>
+<fixture>test_utils.TestGetOptsHelpers</fixture>
+<file>tests/test_utils.py</file>
+<description>utils.get_list_opt: make sure we get a list</description>
+</test>
+<test><status>success</status>
+<name>test_GetListOptRaisesOptionErrorOnOtherThenListsTuplesStrings</name>
+<fixture>test_utils.TestGetOptsHelpers</fixture>
+<file>tests/test_utils.py</file>
+<description>utils.get_list_opt: raises OptionError on values other than lists, tuples, strings</description>
+</test>
+</unittest-results>

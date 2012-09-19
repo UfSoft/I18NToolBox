@@ -1,0 +1,38 @@
+# I18NToolBox Project
+# Copyright 2010 FoBar
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: ADDRESS@EMAIL\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Built-With: I18NToolBox 0.1\n"
+
+# Um comentário normal
+#: /some/path/to/file.py:22
+#, fuzzy
+msgid "Só para testar a classe Catalog"
+msgstr ""
+
+#. Um comentário automático
+#: /another/path/to/file.py:44
+#, fuzzy, python-format
+msgid "Só para testar %d classe CatalogMessage"
+msgstr "Just to test %d class CatalogMessage"
+
+# A message in plural Form
+#: /some/path/to/file.py:66
+#, fuzzy, possible-python-format
+msgid "Só para outra vez testar %d classe CatalogMessage"
+msgid_plural "Só para outra vez testar %d classes CatalogMessage"
+msgstr[0] "Just to test again %d CatalogMessage class"
+msgstr[1] "Just to test again %d CatalogMessage classes"
+

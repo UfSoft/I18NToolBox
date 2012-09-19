@@ -1,0 +1,446 @@
+# -*- coding: utf-8 -*-
+# vim: sw=4 ts=4 fenc=utf-8
+# =============================================================================
+# $Id: test_optparsers.py 76 2007-04-16 18:56:35Z s0undt3ch $
+# =============================================================================
+# $URL: http://i18ntoolbox.ufsoft.org/svn/branches/fresh-start/tests/test_optparsers.py $
+# $LastChangedDate: 2007-04-16 19:56:35 +0100 (Mon, 16 Apr 2007) $
+# $Rev: 76 $
+# $LastChangedBy: s0undt3ch $
+# =============================================================================
+# Copyright (C) 2006 Ufsoft.org - Pedro Algarvio <ufs@ufsoft.org>
+#
+# Please view LICENSE for additional licensing information.
+# =============================================================================
+
+import os
+import sys
+import unittest
+from optparse import OptionGroup
+from nose.tools import with_setup, raises
+
+from i18ntoolbox.commands import CustomOptionParser, BaseGettextTool, \
+        CommonOptsGettextTool, CmdLineInterface
+from helpers import fakeit, build_defaults
+
+
+class TestCustomOptionParser(unittest.TestCase):
+    def setUp(self):
+        self.p = CustomOptionParser()
+
+    def test_SetUpOptionGroup(self):
+        """CustomOptionParser: Create option group
+        Normal behaviour when creating option groups"""
+        assert isinstance(self.p.add_option_group('Test Group'), OptionGroup)
+
+    def test_GetOptionGroup(self):
+        """CustomOptionParser: Test overriden get_option_group()"""
+        test_group = self.p.add_option_group('Test Group')
+        assert self.p.get_option_group('test_group') == test_group
+
+    def test_GetOptionGroupByAttribute(self):
+        """CustomOptionParser: Get option group by attribute"""
+        test_group = self.p.add_option_group('Test Group')
+        assert self.p.test_group == test_group
+
+    def test_AddOptionToOptionGroup(self):
+        """CustomOptionParser: Add an option to an option group"""
+        test_group = self.p.add_option_group('Test Group')
+        test_group.add_option('-f')
+        assert self.p.has_option('-f')
+
+
+class TestBaseGettextTool(unittest.TestCase):
+    def setUp(self):
+        "Setup BaseGettextTool"
+        t = BaseGettextTool
+        t.defaults = build_defaults()
+        self.t = t()
+
+    def test_OutputFileLocationGroup(self):
+        "BaseGettextTool: Make sure the 'Output File Location' group exists"
+        assert isinstance(
+            getattr(self.t.parser, 'output_file_location'), OptionGroup
+        )
+
+    def test_HasDestructiveOption(self):
+        "BaseGettextTool: Has '--destructive' option"
+        assert self.t.parser.has_option('--destructive')
+
+
+    def test_SetDestructiveOption(self):
+        "BaseGettextTool: Set '--destructive' option"
+        (opts, args) = self.t.parser.parse_args(args=['--destructive'])
+        assert opts.destructive
+
+    def test_DestructiveOptionType(self):
+        "BaseGettextTool: The '--destructive' option value is a bolean"
+        (opts, args) = self.t.parser.parse_args(args=['--destructive'])
+        assert isinstance(opts.destructive, bool)
+
+    def test_HasOutputFileOption(self):
+        "BaseGettextTool: Has '--output-file' option"
+        assert self.t.parser.has_option('--output-file')
+
+    def test_SetOutputFileOption(self):
+        "BaseGettextTool: Set '--output-file' option"
+        (opts, args) = self.t.parser.parse_args(args=['--output-file=foo'])
+        assert opts.output_file
+
+    def test_OutputFileType(self):
+        "BaseGettextTool: The '--output-file' option value is a basestring instance"
+        (opts, args) = self.t.parser.parse_args(args=['--output-file=foo'])
+        assert isinstance(opts.output_file, basestring)
+
+    def test_OutputFileUpdatesGettextDefaultsDict(self):
+        "BaseGettextTool: The '--output-file' option updates the defaults gettext opt list"
+        opt = '--output-file=foo'
+        fakeit(opt, self.t.run)
+        assert opt in self.t.defaults.gettext_opts
+
+
+
+class TestCommonOptsGettextTool(unittest.TestCase):
+    def setUp(self):
+        t = CommonOptsGettextTool
+        t.defaults = build_defaults()
+        self.t = t()
+        self.p = self.t.parser
+
+    @raises(SystemExit)
+    def test_SetEscapeAndNoEscapeOptions(self):
+        "CommonOptsGettextTool: Set Both '--escape' and '--no-escape' raises SystemExit"
+        fakeit(['--escape', '--no-escape'], self.t.run)
+
+    @raises(SystemExit)
+    def test_SetLocationAndNoLocationOptions(self):
+        "CommonOptsGettextTool: Set Both '--no-location' and '--add-location' raises SystemExit"
+        fakeit(['--no-location', '--add-location'], self.t.run)
+
+    @raises(SystemExit)
+    def test_SetSortOutputAndSortByFileOptions(self):
+        "CommonOptsGettextTool: Set Both '--sort-output' and '--sort-by-file' raises SystemExit"
+        fakeit(['--sort-output', '--sort-by-file'], self.t.run)
+
+    @raises(SystemExit)
+    def test_SetWidthAndNoWrap(self):
+        "CommonOptsGettextTool: Set Both '--width' and '--no-wrap' raises SystemExit"
+        fakeit(['--width=78', '--no-wrap'], self.t.run)
+
+    def test_HasEscapeOption(self):
+        "CommonOptsGettextTool: Has '--escape' option"
+        assert self.p.has_option('--escape')
+
+    def test_EscapeOptionType(self):
+        "CommonOptsGettextTool: The '--escape' option value is a boolean"
+        (opts, args) = self.t.parser.parse_args(args=['--escape'])
+        assert isinstance(opts.escape, bool)
+
+    def test_SetEscapeOption(self):
+        "CommonOptsGettextTool: Set '--escape' option"
+        (opts, args) = self.t.parser.parse_args(args=['--escape'])
+        assert opts.escape
+
+    def test_SetEscapeUpdatesGetextOpts(self):
+        "CommonOptsGettextTool: Set '--escape' option updates the defaults gettext opt list"
+        fakeit('--escape', self.t.run)
+        assert '--escape' in self.t.defaults.gettext_opts
+
+    def test_HasNoEscapeOption(self):
+        "CommonOptsGettextTool: Has '--no-escape' option"
+        assert self.p.has_option('--no-escape')
+
+    def test_NoEscapeOptionType(self):
+        "CommonOptsGettextTool: The '--no-escape' option value is a boolean"
+        (opts, args) = self.t.parser.parse_args(args=['--no-escape'])
+        assert isinstance(opts.escape, bool)
+
+    def test_SetNoEscapeOption(self):
+        "CommonOptsGettextTool: Set '--no-escape' option"
+        (opts, args) = self.t.parser.parse_args(args=['--no-escape'])
+        assert not opts.no_escape
+
+    def test_SetNoEscapeUpdatesGetextOpts(self):
+        "CommonOptsGettextTool: Set '--no-escape' option updates the defaults gettext opt list"
+        fakeit('--no-escape', self.t.run)
+        assert '--no-escape' not in self.t.defaults.gettext_opts
+
+    def test_HasIndentOption(self):
+        "CommonOptsGettextTool: Has '--indent' option"
+        assert self.p.has_option('--indent')
+
+    def test_IndentOptionType(self):
+        "CommonOptsGettextTool: The '--indent' option value is a boolean"
+        (opts, args) = self.t.parser.parse_args(args=['--indent'])
+        assert isinstance(opts.indent, bool)
+
+    def test_SetIndentOption(self):
+        "CommonOptsGettextTool: Set '--indent' option"
+        (opts, args) = self.t.parser.parse_args(args=['--indent'])
+        assert opts.indent
+
+    def test_SetIndentUpdatesGettextOpts(self):
+        "CommonOptsGettextTool: Set '--indent' option updates the defaults gettext opt list"
+        fakeit('--indent', self.t.run)
+        assert '--indent' in self.t.defaults.gettext_opts
+
+    def test_HasNoLocationOption(self):
+        "CommonOptsGettextTool: Has '--no-location' option"
+        assert self.p.has_option('--no-location')
+
+    def test_NoLocationOptionType(self):
+        "CommonOptsGettextTool: The '--no-location' option value is a boolean"
+        (opts, args) = self.t.parser.parse_args(args=['--no-location'])
+        assert isinstance(opts.no_location, bool)
+
+    def test_SetNoLocationOption(self):
+        "CommonOptsGettextTool: Set '--no-location' option"
+        (opts, args) = self.t.parser.parse_args(args=['--no-location'])
+        assert opts.no_location
+
+    def test_NoLocationUpdatesGettextOpts(self):
+        "CommonOptsGettextTool: Set '--no-location' option updates the defaults gettext opt list"
+        fakeit('--no-location', self.t.run)
+        assert '--no-location' in self.t.defaults.gettext_opts
+
+    def test_HasAddLocationOption(self):
+        "CommonOptsGettextTool: Has '--add-location' option"
+        assert self.p.has_option('--add-location')
+
+    def test_AddLocationOptionType(self):
+        "CommonOptsGettextTool: The '--add-location' option value is a boolean"
+        (opts, args) = self.t.parser.parse_args(args=['--add-location'])
+        assert isinstance(opts.add_location, bool)
+
+    def test_SetAddLocationOption(self):
+        "CommonOptsGettextTool: Set '--add-location' option"
+        (opts, args) = self.t.parser.parse_args(args=['--add-location'])
+        assert not opts.add_location
+
+    def test_SetAddLocationUpdatesGettextOpts(self):
+        "CommonOptsGettextTool: Set '--add-location' option updates the defaults gettext opt list"
+        fakeit('--add-location', self.t.run)
+        assert '--add-location' not in self.t.defaults.gettext_opts
+
+    def test_HasStrictOption(self):
+        "CommonOptsGettextTool: Has '--strict' option"
+        assert self.p.has_option('--strict')
+
+    def test_StrictOptionType(self):
+        "CommonOptsGettextTool: The '--strict' option value is a boolean"
+        (opts, args) = self.t.parser.parse_args(args=['--strict'])
+        assert isinstance(opts.strict, bool)
+
+    def test_SetStrictOption(self):
+        "CommonOptsGettextTool: Set '--strict' option"
+        (opts, args) = self.t.parser.parse_args(args=['--strict'])
+        assert opts.strict
+
+    def test_SetStrictUpdatesGettextOpts(self):
+        "CommonOptsGettextTool: Set '--strict' option updates the defaults gettext opt list"
+        fakeit('--strict', self.t.run)
+        assert '--strict' in self.t.defaults.gettext_opts
+
+    def test_HasWidthOption(self):
+        "CommonOptsGettextTool: Has '--width' option"
+        assert self.p.has_option('--width')
+
+    def test_WidthOptionType(self):
+        "CommonOptsGettextTool: The '--width' option value is an integer"
+        (opts, args) = self.t.parser.parse_args(args=['--width=76'])
+        assert isinstance(opts.strict, int)
+
+    def test_SetWidthOption(self):
+        "CommonOptsGettextTool: Set '--width' option"
+        (opts, args) = self.t.parser.parse_args(args=['--width=76'])
+        assert opts.width
+
+    def test_SetWidthUpdatesGettextOpts(self):
+        "CommonOptsGettextTool: Set '--width' option updates the defaults gettext opt list"
+        fakeit('--width=76', self.t.run)
+        assert '--width=76' in self.t.defaults.gettext_opts
+
+    def test_HasNoWrapOption(self):
+        "CommonOptsGettextTool: Has '--no-wrap' option"
+        assert self.p.has_option('--no-wrap')
+
+    def test_NoWrapOptionType(self):
+        "CommonOptsGettextTool: The '--no-wrap' option value is a boolean"
+        (opts, args) = self.t.parser.parse_args(args=['--no-wrap'])
+        assert isinstance(opts.no_wrap, bool)
+
+    def test_SetNoWrapOption(self):
+        "CommonOptsGettextTool: Set '--no-wrap' option"
+        (opts, args) = self.t.parser.parse_args(args=['--no-wrap'])
+        assert opts.no_wrap
+
+    def test_SetNoWrapUpdatesGettextOpts(self):
+        "CommonOptsGettextTool: Set '--no-wrap' option updates the defaults gettext opt list"
+        fakeit('--no-wrap', self.t.run)
+        assert '--no-wrap' in self.t.defaults.gettext_opts
+
+    def test_HasSortOutputOption(self):
+        "CommonOptsGettextTool: Has '---sort-output' option"
+        assert self.p.has_option('--sort-output')
+
+    def test_SortOutputOptionType(self):
+        "CommonOptsGettextTool: The '--sort-output' option value is a boolean"
+        (opts, args) = self.t.parser.parse_args(args=['--sort-output'])
+        assert isinstance(opts.sort_output, bool)
+
+    def test_SetSortOutputOption(self):
+        "CommonOptsGettextTool: Set '--sort-output' option"
+        (opts, args) = self.t.parser.parse_args(args=['--sort-output'])
+        assert opts.sort_output
+
+    def test_SetSortOutputUpdatesGettextOpts(self):
+        "CommonOptsGettextTool: Set '--sort-output' option updates the defaults gettext opt list"
+        fakeit('--sort-output', self.t.run)
+        assert '--sort-output' in self.t.defaults.gettext_opts
+
+    def test_HasSortByFileOption(self):
+        "CommonOptsGettextTool: Has '---sort-by-file' option"
+        assert self.p.has_option('--sort-by-file')
+
+    def test_SortByFileOptionType(self):
+        "CommonOptsGettextTool: The '--sort-by-file' option value is a boolean"
+        (opts, args) = self.t.parser.parse_args(args=['--sort-by-file'])
+        assert isinstance(opts.sort_by_file, bool)
+
+    def test_SetSortByFileOption(self):
+        "CommonOptsGettextTool: Set '--sort-by-file' option"
+        (opts, args) = self.t.parser.parse_args(args=['--sort-by-file'])
+        assert opts.sort_by_file
+
+    def test_SetSortByFileUpdatesGettextOpts(self):
+        "CommonOptsGettextTool: Set '--sort-by-file' option updates the defaults gettext opt list"
+        fakeit('--sort-by-file', self.t.run)
+        assert '--sort-by-file' in self.t.defaults.gettext_opts
+
+
+class TestCmdLineInterface(unittest.TestCase):
+    cmdline = 'cmdline'
+
+    def setUp(self):
+        if not hasattr(self, 'cur_dir'):
+            self.cur_dir = os.getcwd()
+        os.chdir(os.path.join(self.cur_dir, 'tests', 'data'))
+        self.t = CmdLineInterface()
+
+    def tearDown(self):
+        os.chdir(self.cur_dir)
+
+    @raises(SystemExit)
+    def test_EmptyCmdLine(self):
+        "CmdLineInterface: no args passed raises SystemExit"
+        fakeit([], self.t.run)
+
+    def test_ExtractCommand(self):
+        "CmdLineInterface: run extract command(with args from setup.cfg)"
+        fakeit(['extract'], self.t.run)
+
+    def test_ProjectNameDefault(self):
+        "CmdLineInterface: correct project name from defaults"
+        fakeit(['extract'], self.t.run)
+        assert self.t.defaults.project.name == 'TestProject'
+
+    def test_ProjectVersionFromDefaults(self):
+        "CmdLineInterface: correct project version from defaults"
+        fakeit(['extract'], self.t.run)
+        assert self.t.defaults.project.version == '0.1'
+
+    def test_ProjectBasedirFromDefaults(self):
+        "CmdLineInterface: correct project basedir from defaults"
+        fakeit(['extract'], self.t.run)
+        path = os.path.join(self.cur_dir, 'tests', 'data')
+        assert self.t.defaults.project.basedir == path
+
+    def test_ProjectPathFromDefaults(self):
+        "CmdLineInterface: correct project path from defaults"
+        fakeit(['extract'], self.t.run)
+        path = os.path.join(self.cur_dir, 'tests', 'data', 'project')
+        assert self.t.defaults.project.path == path
+
+    def test_ProjectI18NPathFromDefaults(self):
+        "CmdLineInterface: correct project i18n path from defaults"
+        fakeit(['extract'], self.t.run)
+        path = os.path.join(self.cur_dir, 'tests', 'data', 'project', 'i18n')
+        assert self.t.defaults.project.i18n_path == path
+
+    def test_FromSetupConfigJoinExiting(self):
+        "CmdLineInterface: is '--join-existing' set from projects setup.cfg"
+        fakeit(['extract'], self.t.run)
+        print self.t.defaults
+        assert self.t.defaults.parsed_opts.join_existing == True
+
+    def test_FromSetupConfigEscape(self):
+        "CmdLineInterface: is '--escape' set from projects setup.cfg"
+        fakeit(['extract'], self.t.run)
+        assert self.t.defaults.parsed_opts.escape == False
+
+    def test_FromSetupConfigStrict(self):
+        "CmdLineInterface: is '--strict' set from projects setup.cfg"
+        fakeit(['extract'], self.t.run)
+        assert self.t.defaults.parsed_opts.strict == False
+
+    def test_FromSetupConfigWidth(self):
+        "CmdLineInterface: is '--width' set from projects setup.cfg"
+        fakeit(['extract'], self.t.run)
+        assert self.t.defaults.parsed_opts.width == 76
+
+    def test_FromSetupConfigSortOutput(self):
+        "CmdLineInterface: is '--sort-output' set from projects setup.cfg"
+        fakeit(['extract'], self.t.run)
+        assert self.t.defaults.parsed_opts.sort_output == False
+
+    def test_FromSetupConfigCopyrightHolder(self):
+        "CmdLineInterface: is '--copyright-holder' set from projects setup.cfg"
+        fakeit(['extract'], self.t.run)
+        assert self.t.defaults.parsed_opts.copyright_holder == 'Pedro Algarvio'
+
+    def test_FromSetupConfigForeignUser(self):
+        "CmdLineInterface: is '--foreign-user' set from projects setup.cfg"
+        fakeit(['extract'], self.t.run)
+        assert self.t.defaults.parsed_opts.foreign_user == False
+
+    def test_FromSetupConfigMsgidBugsAddress(self):
+        "CmdLineInterface: is '--msgid-bugs-address' set from projects setup.cfg"
+        fakeit(['extract'], self.t.run)
+        assert self.t.defaults.parsed_opts.msgid_bugs_address == 'foo@bar.tld'
+
+    def test_FromSetupConfigDebug(self):
+        "CmdLineInterface: is '--debug' set from projects setup.cfg"
+        fakeit(['extract'], self.t.run)
+        assert self.t.defaults.parsed_opts.debug == True
+
+    def test_FromSetupConfigGenshiSupport(self):
+        "CmdLineInterface: is '--genshi-support' set from projects setup.cfg"
+        fakeit(['extract'], self.t.run)
+        assert self.t.defaults.parsed_opts.genshi_support == True
+
+    def test_FromSetupConfigKeywords(self):
+        "CmdLineInterface: is '--keywords' set from projects setup.cfg"
+        from i18ntoolbox.commands.extract import DEFAULT_KEYWORDS
+        print 'DEFAULT_KEYWORDS:', DEFAULT_KEYWORDS
+        fakeit(['extract'], self.t.run)
+        print 'Parsed Keywords:', self.t.defaults.parsed_opts.keywords
+        print 'Config File Options:', self.t.defaults.cfgfile
+        #print 'Gettext Opts:', self.t.defaults.gettext_opts
+        for kw in list(DEFAULT_KEYWORDS) + ['__', 'N__']:
+            assert kw in self.t.defaults.parsed_opts.keywords, "%r not in keywords" % kw
+<<<<<<< .mine
+        #assert self.t.defaults.parsed_opts.keywords == ['__', 'N__']
+        raise 'I failed because I wanted to'
+=======
+>>>>>>> .r76
+
+    def test_ShellArgsOverrideSetupConfigOptions(self):
+        "CmdLineInterface: arguments from command line override those from setup.cfg"
+        fakeit(['extract', '--foreign-user', '--sort-output'], self.t.run)
+        assert self.t.defaults.parsed_opts.foreign_user == True, \
+                "'--foreign-user' from command line did not override setting on setup.cfg"
+        assert self.t.defaults.parsed_opts.sort_output == True, \
+                "'--sort-output' from command line did not override setting on setup.cfg"
+
+if __name__ == '__main__':
+    unittest.main()

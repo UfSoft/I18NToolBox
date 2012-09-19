@@ -1,0 +1,140 @@
+i18ntoolbox/__init__.py:6: [C0301] Line too long (88/80)
+i18ntoolbox/__init__.py:1: [C0111] Missing docstring
+i18ntoolbox/utils.py:6: [C0301] Line too long (85/80)
+i18ntoolbox/utils.py:1: [C0111] Missing docstring
+i18ntoolbox/utils.py:53: [C0103, escape_unicode] Invalid name "s" (should match [a-z_][a-z0-9_]{2,30}$)
+i18ntoolbox/utils.py:70: [C0103, escape_unicode] Invalid name "s" (should match [a-z_][a-z0-9_]{2,30}$)
+i18ntoolbox/utils.py:71: [C0103, escape_unicode] Invalid name "s" (should match [a-z_][a-z0-9_]{2,30}$)
+i18ntoolbox/utils.py:72: [C0103, escape_unicode] Invalid name "s" (should match [a-z_][a-z0-9_]{2,30}$)
+i18ntoolbox/utils.py:73: [C0103, escape_unicode] Invalid name "s" (should match [a-z_][a-z0-9_]{2,30}$)
+i18ntoolbox/utils.py:74: [C0103, escape_unicode] Invalid name "s" (should match [a-z_][a-z0-9_]{2,30}$)
+i18ntoolbox/utils.py:76: [C0111, escape_unicode.repl] Missing docstring
+i18ntoolbox/utils.py:76: [C0103, escape_unicode.repl] Invalid name "m" (should match [a-z_][a-z0-9_]{2,30}$)
+i18ntoolbox/utils.py:76: [C0321, escape_unicode.repl] More than one statement on a single line
+i18ntoolbox/utils.py:77: [C0103, escape_unicode] Invalid name "s" (should match [a-z_][a-z0-9_]{2,30}$)
+i18ntoolbox/utils.py:81: [C0103, normalize] Invalid name "s" (should match [a-z_][a-z0-9_]{2,30}$)
+i18ntoolbox/utils.py:105: [C0103, normalize] Invalid name "s" (should match [a-z_][a-z0-9_]{2,30}$)
+i18ntoolbox/utils.py:113: [C0103, normalize] Invalid name "s" (should match [a-z_][a-z0-9_]{2,30}$)
+i18ntoolbox/utils.py:142: [W0704, check_python_format] Except doesn't do anything
+i18ntoolbox/utils.py:140: [C0103, check_python_format] Invalid name "m" (should match [a-z_][a-z0-9_]{2,30}$)
+i18ntoolbox/utils.py:147: [W0704, check_python_format] Except doesn't do anything
+i18ntoolbox/utils.py:145: [C0103, check_python_format] Invalid name "m" (should match [a-z_][a-z0-9_]{2,30}$)
+i18ntoolbox/utils.py:149: [C0103, check_python_format] Invalid name "n" (should match [a-z_][a-z0-9_]{2,30}$)
+i18ntoolbox/utils.py:155: [W0704, check_python_format] Except doesn't do anything
+i18ntoolbox/utils.py:153: [C0103, check_python_format] Invalid name "m" (should match [a-z_][a-z0-9_]{2,30}$)
+i18ntoolbox/utils.py:160: [W0704, check_python_format] Except doesn't do anything
+i18ntoolbox/utils.py:159: [C0103, check_python_format] Invalid name "m" (should match [a-z_][a-z0-9_]{2,30}$)
+i18ntoolbox/utils.py:140: [W0612, check_python_format] Unused variable 'm'
+i18ntoolbox/utils.py:220: [W0704, silent_backup] Except doesn't do anything
+i18ntoolbox/commands/extract.py:351: [W0511] TODO
+i18ntoolbox/commands/extract.py:6: [C0301] Line too long (96/80)
+i18ntoolbox/commands/extract.py:133: [C0301] Line too long (86/80)
+i18ntoolbox/commands/extract.py:139: [C0301] Line too long (86/80)
+i18ntoolbox/commands/extract.py:228: [C0301] Line too long (88/80)
+i18ntoolbox/commands/extract.py:262: [C0301] Line too long (87/80)
+i18ntoolbox/commands/extract.py:347: [C0301] Line too long (84/80)
+i18ntoolbox/commands/extract.py:1: [C0111] Missing docstring
+i18ntoolbox/commands/extract.py:23: [F0401] Unable to import 'pytz.utc' (No module named pytz)
+i18ntoolbox/commands/extract.py:53: [E1101, ExtractionTool.__init__] Instance of 'None' has no 'project' member
+i18ntoolbox/commands/extract.py:60: [E1101, ExtractionTool.__init__] Instance of 'None' has no 'project' member
+i18ntoolbox/commands/extract.py:148: [E1101, ExtractionTool.__init__] Instance of 'None' has no 'engines' member
+i18ntoolbox/commands/extract.py:149: [E1101, ExtractionTool.__init__] Instance of 'None' has no 'engines' member
+i18ntoolbox/commands/extract.py:175: [E1101, ExtractionTool.__init__] Instance of 'None' has no 'engines' member
+i18ntoolbox/commands/extract.py:176: [E1101, ExtractionTool.__init__] Instance of 'None' has no 'engines' member
+i18ntoolbox/commands/extract.py:183: [C0103, ExtractionTool.setup_templating_engines_options] Invalid name "setup_templating_engines_options" (should match [a-z_][a-z0-9_]{2,30}$)
+i18ntoolbox/commands/extract.py:183: [C0111, ExtractionTool.setup_templating_engines_options] Missing docstring
+i18ntoolbox/commands/extract.py:195: [R0914, ExtractionTool.scan_files] Too many local variables (16/15)
+i18ntoolbox/commands/extract.py:195: [R0201, ExtractionTool.scan_files] Method could be a function
+i18ntoolbox/commands/extract.py:200: [W0612, ExtractionTool.scan_files] Unused variable 'dirs'
+i18ntoolbox/commands/extract.py:206: [W0612, ExtractionTool.scan_files] Unused variable 'name'
+i18ntoolbox/commands/extract.py:227: [C0111, ExtractionTool.build_pot_header] Missing docstring
+i18ntoolbox/commands/extract.py:250: [E1101, ExtractionTool.build_pot_header] Instance of 'None' has no 'project' member
+i18ntoolbox/commands/extract.py:251: [E1101, ExtractionTool.build_pot_header] Instance of 'None' has no 'project' member
+i18ntoolbox/commands/extract.py:254: [E1101, ExtractionTool.build_pot_header] Instance of 'None' has no 'parsed_opts' member
+i18ntoolbox/commands/extract.py:255: [E1101, ExtractionTool.build_pot_header] Instance of 'None' has no 'parsed_opts' member
+i18ntoolbox/commands/extract.py:268: [E1101, ExtractionTool.run] Instance of 'None' has no 'gettext_opts' member
+i18ntoolbox/commands/extract.py:309: [C0103, ExtractionTool.run] Invalid name "kw" (should match [a-z_][a-z0-9_]{2,30}$)
+i18ntoolbox/commands/extract.py:321: [E1101, ExtractionTool.run] Instance of 'None' has no 'engines' member
+i18ntoolbox/commands/extract.py:322: [E1101, ExtractionTool.run] Instance of 'None' has no 'engines' member
+i18ntoolbox/commands/extract.py:334: [E1101, ExtractionTool.run] Instance of 'None' has no 'project' member
+i18ntoolbox/commands/extract.py:341: [E1101, ExtractionTool.run] Instance of 'None' has no 'project' member
+i18ntoolbox/commands/extract.py:342: [E1101, ExtractionTool.run] Instance of 'None' has no 'project' member
+i18ntoolbox/commands/extract.py:345: [E1101, ExtractionTool.run] Instance of 'None' has no 'project' member
+i18ntoolbox/commands/extract.py:347: [E1101, ExtractionTool.run] Instance of 'None' has no 'project' member
+i18ntoolbox/commands/extract.py:355: [E1101, ExtractionTool.run] Instance of 'None' has no 'gettext_opts' member
+i18ntoolbox/commands/extract.py:265: [R0912, ExtractionTool.run] Too many branches (21/12)
+i18ntoolbox/commands/extract.py:265: [R0915, ExtractionTool.run] Too many statements (51/50)
+i18ntoolbox/commands/extract.py:267: [W0612, ExtractionTool.run] Unused variable 'args'
+i18ntoolbox/commands/extract.py:333: [W0612, ExtractionTool.run] Unused variable 'template_files'
+i18ntoolbox/commands/__init__.py:37: [W0511] XXX TO BE THOUGHT IF IT SHOULD BE DONE THIS WAY
+i18ntoolbox/commands/__init__.py:247: [W0511] XXX TO BE THOUGHT IF IT SHOULD BE DONE THIS WAY
+i18ntoolbox/commands/__init__.py:6: [C0301] Line too long (97/80)
+i18ntoolbox/commands/__init__.py:159: [C0301] Line too long (81/80)
+i18ntoolbox/commands/__init__.py:316: [C0301] Line too long (81/80)
+i18ntoolbox/commands/__init__.py:360: [C0301] Line too long (82/80)
+i18ntoolbox/commands/__init__.py:1: [C0111] Missing docstring
+i18ntoolbox/commands/__init__.py:46: [W0142, CustomOptionParser.__init__] Used * or ** magic
+i18ntoolbox/commands/__init__.py:53: [C0111, CustomOptionParser.add_option_group] Missing docstring
+i18ntoolbox/commands/__init__.py:53: [W0222, CustomOptionParser.add_option_group] Signature differs from overridden method
+i18ntoolbox/commands/__init__.py:59: [C0111, CustomOptionParser.get_option_group] Missing docstring
+i18ntoolbox/commands/__init__.py:41: [R0904, CustomOptionParser] Too many public methods (31/20)
+i18ntoolbox/commands/__init__.py:94: [E1101, BaseGettextTool.__init__] Instance of 'None' has no 'project' member
+i18ntoolbox/commands/__init__.py:105: [E1101, BaseGettextTool.parse_args] Instance of 'None' has no 'has_key' member
+i18ntoolbox/commands/__init__.py:106: [E1101, BaseGettextTool.parse_args] Instance of 'None' has no 'cfgfile' member
+i18ntoolbox/commands/__init__.py:116: [W0142, BaseGettextTool.parse_args] Used * or ** magic
+i18ntoolbox/commands/__init__.py:119: [C0111, BaseGettextTool.build_parser_opts] Missing docstring
+i18ntoolbox/commands/__init__.py:121: [E1101, BaseGettextTool.build_parser_opts] Instance of 'None' has no 'parsed_opts' member
+i18ntoolbox/commands/__init__.py:123: [C0111, BaseGettextTool.run] Missing docstring
+i18ntoolbox/commands/__init__.py:127: [E1101, BaseGettextTool.run] Instance of 'None' has no 'gettext_opts' member
+i18ntoolbox/commands/__init__.py:214: [C0111, CommonOptsGettextTool.parse_args] Missing docstring
+i18ntoolbox/commands/__init__.py:217: [C0111, CommonOptsGettextTool.run] Missing docstring
+i18ntoolbox/commands/__init__.py:245: [E1101, CommonOptsGettextTool.run] Instance of 'None' has no 'gettext_opts' member
+i18ntoolbox/commands/__init__.py:217: [R0912, CommonOptsGettextTool.run] Too many branches (17/12)
+i18ntoolbox/commands/__init__.py:332: [C0111, CmdLineInterface._help] Missing docstring
+i18ntoolbox/commands/__init__.py:342: [C0111, CmdLineInterface.parse_config_section] Missing docstring
+i18ntoolbox/commands/__init__.py:357: [C0111, CmdLineInterface.get_package_info] Missing docstring
+i18ntoolbox/commands/__init__.py:390: [W0212, CmdLineInterface.get_package_info] Access to a protected member _provider of a client class
+i18ntoolbox/commands/__init__.py:391: [W0212, CmdLineInterface.get_package_info] Access to a protected member _provider of a client class
+i18ntoolbox/commands/__init__.py:395: [W0212, CmdLineInterface.get_package_info] Access to a protected member _provider of a client class
+i18ntoolbox/commands/__init__.py:357: [R0912, CmdLineInterface.get_package_info] Too many branches (17/12)
+i18ntoolbox/commands/__init__.py:425: [C0111, CmdLineInterface.run] Missing docstring
+i18ntoolbox/commands/__init__.py:434: [C0324, CmdLineInterface.run] Comma not followed by a space
+        sys.argv = [sys.argv[0],] + args[1:]
+                               ^^
+i18ntoolbox/commands/__init__.py:463: [C0111, main] Missing docstring
+i18ntoolbox/templating/genshigte.py:6: [C0301] Line too long (100/80)
+i18ntoolbox/templating/genshigte.py:138: [W0311] Bad indentation. Found 23 spaces, expected 24
+i18ntoolbox/templating/genshigte.py:139: [W0311] Bad indentation. Found 27 spaces, expected 28
+i18ntoolbox/templating/genshigte.py:168: [C0301] Line too long (82/80)
+i18ntoolbox/templating/genshigte.py:1: [C0111] Missing docstring
+i18ntoolbox/templating/genshigte.py:40: [C0111, GenshiGettextExtract.setup] Missing docstring
+i18ntoolbox/templating/genshigte.py:44: [E0213, GenshiGettextExtract.build_gettext_functions] Method should have "self" as first argument
+i18ntoolbox/templating/genshigte.py:52: [E0602, GenshiGettextExtract.build_gettext_functions] Undefined variable 'self'
+i18ntoolbox/templating/genshigte.py:57: [E0602, GenshiGettextExtract.build_gettext_functions] Undefined variable 'self'
+i18ntoolbox/templating/genshigte.py:60: [C0111, GenshiGettextExtract.to_code] Missing docstring
+i18ntoolbox/templating/genshigte.py:69: [C0103, GenshiGettextExtract.extract_strings] Invalid name "op" (should match [a-z_][a-z0-9_]{2,30}$)
+i18ntoolbox/templating/genshigte.py:91: [E1101, GenshiGettextExtract.find_gettext] Instance of 'GenshiGettextExtract' has no 'gettext_funcs' member
+i18ntoolbox/templating/genshigte.py:100: [E0602, GenshiGettextExtract.find_gettext] Undefined variable 'extract_strings'
+i18ntoolbox/templating/genshigte.py:106: [E0602, GenshiGettextExtract.extract_from_template] Undefined variable 'extract_from_stream'
+i18ntoolbox/templating/genshigte.py:109: [E0213, GenshiGettextExtract.extract_from_stream] Method should have "self" as first argument
+i18ntoolbox/templating/genshigte.py:109: [R0914, GenshiGettextExtract.extract_from_stream] Too many local variables (17/15)
+i18ntoolbox/templating/genshigte.py:122: [E0602, GenshiGettextExtract.extract_from_stream] Undefined variable 'ignore_tags'
+i18ntoolbox/templating/genshigte.py:126: [E0602, GenshiGettextExtract.extract_from_stream] Undefined variable 'ignore_tags'
+i18ntoolbox/templating/genshigte.py:132: [E0602, GenshiGettextExtract.extract_from_stream] Undefined variable 'ignore_tags'
+i18ntoolbox/templating/genshigte.py:138: [E0602, GenshiGettextExtract.extract_from_stream] Undefined variable 'self'
+i18ntoolbox/templating/genshigte.py:141: [E0602, GenshiGettextExtract.extract_from_stream] Undefined variable 'self'
+i18ntoolbox/templating/genshigte.py:142: [E0602, GenshiGettextExtract.extract_from_stream] Undefined variable 'include_attribs'
+i18ntoolbox/templating/genshigte.py:146: [E0602, GenshiGettextExtract.extract_from_stream] Undefined variable 'find_gettext'
+i18ntoolbox/templating/genshigte.py:156: [E0602, GenshiGettextExtract.extract_from_stream] Undefined variable 'self'
+i18ntoolbox/templating/genshigte.py:109: [R0912, GenshiGettextExtract.extract_from_stream] Too many branches (21/12)
+i18ntoolbox/templating/genshigte.py:161: [C0111, GenshiGettextExtract.extract_keys] Missing docstring
+i18ntoolbox/templating/genshigte.py:162: [E1101, GenshiGettextExtract.extract_keys] Instance of 'GenshiGettextExtract' has no 'templates_path' member
+i18ntoolbox/templating/genshigte.py:163: [E1101, GenshiGettextExtract.extract_keys] Instance of 'GenshiGettextExtract' has no 'files' member
+i18ntoolbox/templating/genshigte.py:166: [C0103, GenshiGettextExtract.extract_keys] Invalid name "e" (should match [a-z_][a-z0-9_]{2,30}$)
+i18ntoolbox/templating/genshigte.py:41: [W0201, GenshiGettextExtract.setup] Attribute 'debug' defined outside __init__
+i18ntoolbox/templating/genshigte.py:23: [W0611] Unused import get_list_opt
+i18ntoolbox/templating/__init__.py:6: [C0301] Line too long (99/80)
+i18ntoolbox/templating/__init__.py:1: [C0111] Missing docstring
+i18ntoolbox/templating/__init__.py:16: [R0922, TEGettextExtractInterface] Abstract class is only referenced 1 times
+i18ntoolbox/commands/__init__.py:287: [R0923, CmdLineInterface] Interface not implemented
+i18ntoolbox/templating/genshigte.py:25: [R0923, GenshiGettextExtract] Interface not implemented
